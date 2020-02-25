@@ -45,7 +45,7 @@ Things you may want to cover:
 - has_many :user
 - has_many :messages
 
-##　group_memberテーブル
+## group_memberテーブル
 |Column|Type|Options|
 |------|----|-------|
 |group_id|integer|null: false|
