@@ -1,0 +1,40 @@
+.main_chat
+  .main_chat__group-info
+    .main_chat__group-info__left
+      .main_chat__group-info__left-name
+        test
+      .main_chat__group-info__left-member
+        Member:masa
+    .main_chat__group-info__right
+      = link_to "#" , class: "main_chat__group-info__right__btn"  do
+        edit
+
+  .main_chat__message
+    .main_chat__message__list
+      .main_chat__message__list__member
+        .main_chat__message__list__member__name
+          masa
+        .main_chat__message__list__member__date
+          2019/11/20(Wed) 17:43:01
+      .main_chat__message__list__coment
+        おはよう！
+
+    .main_chat__message__list
+      .main_chat__message__list__member
+        .main_chat__message__list__member__name
+          masa
+        .main_chat__message__list__member__date
+          2019/11/20(Wed) 17:43:01
+      .main_chat__message__list__coment
+        おはよう！
+
+
+  .main_chat__message-form
+    .main_chat__message-form__new
+      %form.main_chat__message-form__new__text
+        %input.main_chat__message-form__new__text__box{type: "text",placeholder: "type a message"}
+        %label.main_chat__message-form__new__text__gazo{type: "image"}
+          %i.fa.fa-image
+            %input.main_chat__message-form__new__text__gazo__file{type: "file", name: "message[image]"}
+         
+      %input.main_chat__message-form__btn{type: "submit", value: "Send"}
